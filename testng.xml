@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="TestScripts.LoginTest"/>
+      <class name="com.testNg.TestNGClassWithListeners"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

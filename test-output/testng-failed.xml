@@ -3,13 +3,12 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="TestScripts.LoginTest">
+      <class name="com.testNg.TestNGClassWithListeners">
         <methods>
-          <include name="initializeDriver"/>
-          <include name="loginTest"/>
-          <include name="closeDriver"/>
+          <include name="closeBrowser"/>
+          <include name="firstMethod2"/>
         </methods>
-      </class> <!-- TestScripts.LoginTest -->
+      </class> <!-- com.testNg.TestNGClassWithListeners -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

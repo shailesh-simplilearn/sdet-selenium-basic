@@ -1,28 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-04-01T09:08:41 IST" name="Suite" finished-at="2022-04-01T09:09:16 IST" duration-ms="34218">
+  <suite started-at="2022-04-04T09:27:20 IST" name="Suite" finished-at="2022-04-04T09:27:20 IST" duration-ms="65">
     <groups>
     </groups>
-    <test started-at="2022-04-01T09:08:41 IST" name="Test" finished-at="2022-04-01T09:09:16 IST" duration-ms="34218">
-      <class name="TestScripts.LoginTest">
-        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:TestScripts.LoginTest@759d26fb]" started-at="2022-04-01T09:08:41 IST" name="initializeDriver" finished-at="2022-04-01T09:08:52 IST" duration-ms="11053" status="PASS">
+    <test started-at="2022-04-04T09:27:20 IST" name="Test" finished-at="2022-04-04T09:27:20 IST" duration-ms="65">
+      <class name="com.testNg.TestNGClassWithListeners">
+        <test-method signature="firstMethod()[pri:0, instance:com.testNg.TestNGClassWithListeners@4229bb3f]" started-at="2022-04-04T09:27:20 IST" name="firstMethod" finished-at="2022-04-04T09:27:20 IST" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- initializeDriver -->
-        <test-method signature="loginTest()[pri:0, instance:TestScripts.LoginTest@759d26fb]" started-at="2022-04-01T09:08:52 IST" name="loginTest" finished-at="2022-04-01T09:09:16 IST" duration-ms="23135" status="FAIL">
+        </test-method> <!-- firstMethod -->
+        <test-method signature="firstMethod1()[pri:0, instance:com.testNg.TestNGClassWithListeners@4229bb3f]" started-at="2022-04-04T09:27:20 IST" name="firstMethod1" finished-at="2022-04-04T09:27:20 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstMethod1 -->
+        <test-method signature="firstMethod2()[pri:0, instance:com.testNg.TestNGClassWithListeners@4229bb3f]" started-at="2022-04-04T09:27:20 IST" name="firstMethod2" finished-at="2022-04-04T09:27:20 IST" duration-ms="3" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[The following asserts failed:
-expected [Invalid password.] but found [Authentication failed.]]]>
+              <![CDATA[null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-expected [Invalid password.] but found [Authentication failed.]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at TestScripts.LoginTest.loginTest(LoginTest.java:19)
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.fail(Assert.java:106)
+at com.testNg.TestNGClassWithListeners.firstMethod2(TestNGClassWithListeners.java:32)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -56,12 +58,16 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:TestScripts.LoginTest@759d26fb]" started-at="2022-04-01T09:09:16 IST" name="closeDriver" finished-at="2022-04-01T09:09:16 IST" duration-ms="194" status="PASS">
+        </test-method> <!-- firstMethod2 -->
+        <test-method signature="firstMethod3()[pri:0, instance:com.testNg.TestNGClassWithListeners@4229bb3f]" started-at="2022-04-04T09:27:20 IST" name="firstMethod3" finished-at="2022-04-04T09:27:20 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeDriver -->
-      </class> <!-- TestScripts.LoginTest -->
+        </test-method> <!-- firstMethod3 -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.testNg.TestNGClassWithListeners@4229bb3f]" started-at="2022-04-04T09:27:20 IST" name="closeBrowser" finished-at="2022-04-04T09:27:20 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.testNg.TestNGClassWithListeners -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
